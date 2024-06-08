@@ -1,22 +1,27 @@
-const sections = document.querySelectorAll('.section');
-const navLinks = document.querySelectorAll('nav a');
+// Navigation toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault(); // Prevent the default link behavior
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
 
-    const targetId = e.target.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
+// Scale-in animations
+const scaleInElements = document.querySelectorAll('.scale-in');
 
-    // Scroll to the target section with a smooth animation
-    targetSection.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+window.addEventListener('load', () => {
+  scaleInElements.forEach(element => {
+    element.classList.add('show');
   });
 });
 
-window.addEventListener('load', function() {
-  var circularImage = document.querySelector('.circular-image');
-  circularImage.classList.add('loaded');
+window.addEventListener('scroll', () => {
+  scaleInElements.forEach(element => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if (elementPosition < screenPosition) {
+      element.classList.add('show');
+    }
+  });
 });

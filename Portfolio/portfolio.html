@@ -3,81 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Developer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&display=swap" rel="stylesheet">
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li class="name"><h1>Adin Firoz</h1></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="logo">
+        <a href="#">Adin Firoz</a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#" class="download-cv">Download CV</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <div class="circular-image">
-        <img src="imgme.jpg" alt="">
+    <section id="about" class="scale-in full-screen">
+      <h2>Adin Firoz</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>An avid web developer with a passion for creating intuitive and engaging digital experiences. Skilled in crafting responsive websites and web applications using cutting-edge technologies. Driven by a desire to constantly learn and push the boundaries of what's possible on the web.</p>
+        </div>
+        <div class="about-image">
+          <img src="imgme.png" alt="Your Image">
+        </div>
       </div>
-      <h2>About Me</h2>
-      <p>A passionate web developer with a keen eye for detail and a knack for creating intuitive, user-friendly websites. 
-        With a strong foundation in HTML, CSS, and JavaScript, I craft digital experiences that are both visually appealing 
-        and highly functional. From concept to deployment, I thrive on turning design visions into reality through clean, efficient code. 
-        My problem-solving skills and commitment to staying up-to-date with the latest web technologies ensure that my 
-        projects are always cutting-edge and optimized for performance. Whether it's a sleek portfolio site or a complex web application, 
-        I approach every project with dedication and a relentless pursuit of excellence.</p>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>Python</li>
-      </ul>
+    <section id="skills" class="scale-in full-screen">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fab fa-html5 fa-3x"></i>
+          <h3>HTML5</h3>
+          <p>Skill level: <span class="skill-level">Beginner</span></p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt fa-3x"></i>
+          <h3>CSS3</h3>
+          <p>Skill level: <span class="skill-level">Intermediate</span></p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js-square fa-3x"></i>
+          <h3>JavaScript</h3>
+          <p>Skill level: <span class="skill-level">Advanced</span></p>
+        </div>
+      </div>
     </section>
 
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <h3>Bachelors of Computer Science</h3>
-          <p>Amity University Noida</p>
-          <p>2022-2025</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section">
+    <section id="contact" class="scale-in full-screen">
       <h2>Contact Me</h2>
       <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send</button>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; Adin Firoz 2024</p>
+    <p>&copy; 2024 Adin Firoz. All rights reserved.</p>
   </footer>
 
   <script src="portfolio.js"></script>
