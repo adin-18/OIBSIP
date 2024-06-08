@@ -138,47 +138,55 @@ body {
   /* Features Section */
   .features {
     background-color: #ffedf5;
-    font-size: larger;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 20px;
+    padding: 20px;
   }
   
   .feature {
-    max-width: 300px;
-    margin: 20px;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
   }
   
   .feature img {
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .feature img:hover {
-    transform: scale(1.1);
   }
   
   .feature h3 {
+    margin-top: 10px;
     font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 25px;
-    color: #e64398;
-    margin-top: 20px;
   }
   
   .feature p {
-    font-size: 20px;
-    color: #b53679;
-   }
+    margin-bottom: 20px;
+    font-family: "Lobster", sans-serif;
+    color:#e64398;
+  }
+  
+  .feature button {
+    padding: 10px 20px;
+    background-color: #e934b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .feature {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feature {
+      width: 100%;
+    }
+  }
   
   /* Footer */
   footer {
