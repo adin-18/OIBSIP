@@ -158,11 +158,13 @@ body {
   }
   
   .feature h3 {
+    font-size: 1.9rem;
     margin-top: 10px;
     font-family: "Cinzel", serif;
   }
   
   .feature p {
+    font-size: 1.5rem;
     margin-bottom: 20px;
     font-family: "Lobster", sans-serif;
     color:#e64398;
@@ -174,6 +176,17 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+  }
+
+   /* Footer */
+   footer {
+    font-family: "Cinzel", serif; ;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #b5367ae8;
+    padding: 20px;
+    text-align: center;
+    color: #fefefe;
   }
   
   @media (max-width: 768px) {
@@ -188,17 +201,6 @@ body {
     }
   }
   
-  /* Footer */
-  footer {
-    font-family: "Cinzel", serif; ;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #b5367ae8;
-    padding: 20px;
-    text-align: center;
-    color: #fefefe;
-  }
-
   /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .hero {
