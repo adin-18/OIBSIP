@@ -189,19 +189,19 @@ body {
     color: #fefefe;
   }
   
-  @media (max-width: 768px) {
+  /* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
     .feature {
       width: 45%;
     }
-  }
+}
   
   @media (max-width: 480px) {
     .feature {
       width: 100%;
     }
-  }
-  
-  /* Media Queries for Responsive Design */
+}
 @media (max-width: 768px) {
     .hero {
       padding: 50px 20px;
