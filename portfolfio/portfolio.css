@@ -105,19 +105,9 @@
             color: #fcfafd; 
         }
 
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 12px;
-            text-align: center;
-            flex-wrap: wrap;
-        }
-
         .about-text {
-            font-size: 15px;
-            padding-left: 30px;
-            flex: 1;
+            font-size: 12px;
+            padding-left: 10px;
             text-align: left;
         }
 
