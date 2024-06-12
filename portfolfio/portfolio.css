@@ -134,19 +134,8 @@
         margin: 20px auto;
     }
 
-    .scale-in {
-        animation: scaleIn 0.5s ease-out forwards;
-    }
-
-    @keyframes scaleIn {
-        from {
-            transform: scale(0.9);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
+    h2{
+        font-size: 40px;
     }
 
     #about {
@@ -157,6 +146,10 @@
         background: #f0eaf5;
     }
 
+    #portfolio {
+        background-color: #f0eaf5;
+      }
+
     #contact {
         background: #f0eaf5;
     }
@@ -166,9 +159,6 @@
         align-items: center;
         gap: 10px;
         flex-wrap: wrap;
-    }
-    h2{
-        font-size: 40px;
     }
 
     .about-text {
@@ -217,12 +207,6 @@
         margin-bottom: 10px;
     }
 
-    #portfolio {
-        background-color: #f0eaf5;;
-        padding: 50px 0;
-        text-align: center;
-        color: #2c2c2d;
-      }
       
       .portfolio-slider {
         width: 80%;
@@ -410,6 +394,21 @@
     .footer-bottom p {
         font-size: 20px;
         margin: 0;
+    }
+
+    .scale-in {
+        animation: scaleIn 0.5s ease-out forwards;
+    }
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
     @media (max-width: 768px) {
